@@ -65,28 +65,6 @@ A new account was registered and used to log in.
 
 After login, the application presented itself as an **Nmap XML converter**, intended to process scan results and generate visual analysis.
 
-Key features:
-
-- Downloadable XML template
-- Upload functionality for scan results
-
-This immediately indicated potential **server-side file processing**.
-
----
-
-### Upload Workflow Testing
-
-I downloaded the provided template and generated my own Nmap XML output:
-
-```bash
-nmap -sC -sV 10.10.11.92 -oX Conversor
-```
-
-Both the template and the generated XML file were uploaded through the application interface.
-
-After processing, the application returned a generated result link — strongly suggesting **server-side XSLT transformation** of uploaded XML files.
-
----
 
 ## Source Code Disclosure
 
@@ -110,6 +88,32 @@ Findings:
 - Runnable via `python3 app.py` or Apache WSGI
 - Web process runs as `www-data`
 
+```
+.
+├── app.py
+├── app.wsgi
+├── install.md
+├── instance
+│   └── users.db
+├── scripts
+├── source_code.tar.gz
+├── static
+│   ├── images
+│   │   ├── arturo.png
+│   │   ├── david.png
+│   │   └── fismathack.png
+│   ├── nmap.xslt
+│   └── style.css
+├── templates
+│   ├── about.html
+│   ├── base.html
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   └── result.html
+└── uploads
+
+```
 ### Critical Discovery
 
 A cron job executes **every ****************************************************************`.py`**************************************************************** file** in:
