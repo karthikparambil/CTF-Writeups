@@ -1,9 +1,10 @@
-# Conversor — HackTheBox Walkthrough
+# Conversor - HackTheBox Walkthrough
 
 > **Platform:** Hack The Box\
 > **Machine Name:** Conversor\
 > **OS:** Linux\
 > **Difficulty:** Easy
+> **Author:** Karthik
 
 ---
 
