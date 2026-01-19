@@ -3,7 +3,7 @@
 > **Platform:** Hack The Box\
 > **Machine Name:** Conversor\
 > **OS:** Linux\
-> **Difficulty:** Easy
+> **Difficulty:** Easy\
 > **Author:** Karthik
 
 ---
