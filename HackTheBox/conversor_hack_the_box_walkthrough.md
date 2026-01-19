@@ -262,7 +262,9 @@ sudo -l
 The output revealed permission to execute:
 
 ```
-/usr/sbin/needrestart
+User fismathack may run the following commands on conversor:
+    (ALL : ALL) NOPASSWD: /usr/sbin/needrestart
+
 ```
 
 ---
